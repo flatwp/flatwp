@@ -1,0 +1,2 @@
+Blog pages disabled for demo build due to missing WordPress data.
+Build status: Successful with blog pages skipped (page not generated)

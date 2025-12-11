@@ -1,0 +1,23 @@
+# Author Fragment
+# Complete author information including custom fields
+
+fragment AuthorFields on User {
+  id
+  databaseId
+  name
+  slug
+  description
+  avatar {
+    url
+  }
+  # Note: firstName, lastName, nickname, and email fields not available in standard WPGraphQL User type
+  # These may be available through custom fields or plugins (ACF, etc)
+}
+
+# Extended author fields with post data for author archive pages
+# Note: User.posts field not available in standard WPGraphQL
+# Use a separate query to fetch author's posts by filtering posts where author matches
+fragment AuthorWithPosts on User {
+  ...AuthorFields
+  # To get posts by author, use GetPostsByAuthor query instead
+}

@@ -1,0 +1,25 @@
+{
+  "name": "flatwp",
+  "version": "0.7.0",
+  "description": "Modern headless WordPress starter with Next.js",
+  "author": "FlatWP",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/flatwp/flatwp.git"
+  },
+  "keywords": [
+    "wordpress",
+    "headless",
+    "nextjs",
+    "react",
+    "typescript",
+    "wpgraphql"
+  ],
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  }
+}

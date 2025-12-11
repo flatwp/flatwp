@@ -1,0 +1,23 @@
+{
+  "name": "@flatwp/config",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Shared configuration for FlatWP",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": "./index.js",
+    "./eslint": "./eslint.config.js",
+    "./tsconfig": "./tsconfig.json",
+    "./tailwind": "./tailwind.config.js"
+  },
+  "files": [
+    "*.js",
+    "*.json",
+    "*.d.ts"
+  ],
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.0"
+  }
+}
